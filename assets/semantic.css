@@ -1,0 +1,217 @@
+/* Importa os css da plugins aqui */
+/* @import url(css/materialize.css); */
+@import url(lib/semantic/dist/semantic.min.css);
+@import url(lib/semantic/dist/docs.css);
+@import url(lib/semantic/dist/rtl.css);
+@import url(lib/semantic/stylesheets/home.css);
+@import url(lib/semantic/assets/owl.carousel.min.css);
+@import url(lib/semantic/src/definitions/elements/button.less);
+@import url(lib/semantic/magnific-popup.css);
+@import url(plugins/w3/w3.css);
+@import url(plugins/animation/animate.min.css);
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Fonts */
+@import url(css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Allerta+Stencil);
+
+.logo {
+  color: #e9700e !important;
+  text-shadow: 1px 1px 6px rgb(187, 96, 6);
+  font-family: Allerta Stencil;
+}
+.fm-logo {
+  color: #e9700e !important;
+  text-shadow: 1px 1px 6px rgb(187, 96, 6);
+  font-family: Allerta Stencil;
+}
+.fm {
+  text-shadow: 1px 1px 6px rgb(187, 96, 6);
+  font-family: Allerta Stencil;
+}
+
+.primary-text {
+  color: #e9700e !important;
+}
+
+.primary {
+  background-color: #e9700e !important;
+}
+
+.logo1 {
+  margin-left: 20px;
+  font-size: 20px !important;
+  color: #e9700e !important;
+  text-shadow: 1px 1px 6px rgb(187, 96, 6);
+  font-family: Allerta Stencil;
+}
+
+.logo2 {
+  font-size: 20px !important;
+  color: #e9700e !important;
+  text-shadow: 1px 1px 6px rgb(187, 96, 6);
+}
+
+.logo:hover {
+  cursor: pointer;
+  color: hsla(30, 100%, 50%, 0.898) !important;
+  text-shadow: 1px 1px 6px rgba(22, 21, 21, 0.644);
+  transition: all 400ms;
+}
+
+.logo1:hover {
+  background-color: transparent;
+}
+
+
+img {
+  max-width: 100%;
+}
+
+.set-bg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+
+.spad {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+/*---------------------
+    Work
+  -----------------------*/
+.work {
+  overflow: hidden;
+  background: #100028;
+}
+
+.work__gallery {
+  margin-right: -10px;
+}
+
+.work__item {
+  height: 311px !important;
+  width: calc(16.67% - 10px);
+  margin-right: 10px;
+  margin-bottom: 10px;
+  float: left;
+  position: relative;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.work__item:hover .work__item__hover {
+  bottom: 0;
+}
+
+.work__item.large__item {
+  height: 633px !important;
+  width: calc(33.33% - 10px);
+}
+
+.work__item.wide__item {
+  width: calc(33.33% - 10px);
+  height: 311px !important;
+}
+
+.work__item .play-btn {
+  display: inline-block;
+  color: #ffffff;
+  font-size: 20px;
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+}
+
+.grid-sizer {
+  width: calc(16.67% - 10px);
+}
+
+.work__item__hover {
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 0;
+  bottom: -300px;
+  width: 100%;
+  padding: 25px 30px 20px;
+  -webkit-transition: all, 0.5s;
+  -o-transition: all, 0.5s;
+  transition: all, 0.5s;
+}
+
+.work__item__hover h4 {
+  font-size: 22px;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.work__item__hover ul li {
+  color: #adadad;
+  list-style: none;
+  font-size: 16px;
+  margin-right: 23px;
+  position: relative;
+  display: inline-block;
+}
+
+.work__item__hover ul li:after {
+  position: absolute;
+  right: -18px;
+  top: 1px;
+  content: "/";
+}
+
+.work__item__hover ul li:last-child {
+  margin-right: 0;
+}
+
+.work__item__hover ul li:last-child:after {
+  display: none;
+}
+
+
+/*--------------------------------- Responsive Media Quaries -----------------------------*/
+@media only screen and (min-width: 1200px) {
+  .container {
+    max-width: 1170px;
+  }
+}
+
+/* Medium Device = 1200px */
+
+/* Small Device = 320px */
+@media only screen and (max-width: 479px) {
+
+  .work__item.wide__item {
+    width: 100%;
+  }
+
+  .work__item {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .work__item.large__item {
+    width: 100%;
+  }
+
+  .work__gallery {
+    margin-right: 0;
+  }
+}
